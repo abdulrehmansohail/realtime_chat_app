@@ -3,7 +3,7 @@ from django.test import TestCase
 from rest_framework import status
 from rest_framework.test import APIClient
 from django.contrib.auth import get_user_model
-from .helper.get_access_token_helper import generate_access_token
+from .helper.get_access_token_helper import get_tokens_for_user
 
 
 User = get_user_model()
@@ -21,7 +21,7 @@ class UserDetailAPITestCase(TestCase):
         # Create a test client and authenticate the user
         self.client = APIClient()
         self.client.force_authenticate(user=self.user)
-        self.token = generate_access_token(self.user)
+        self.token = get_tokens_for_user(self.user)
 
     def test_get_user_details(self):
         # Define the endpoint URL for retrieving user details
