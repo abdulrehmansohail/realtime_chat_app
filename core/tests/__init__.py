@@ -1,0 +1,5 @@
+from .login_test import LoginAPITestCase
+from .register_test import RegisterAPITestCase
+from .accountstatus_test import AccountStatusViewTestCase
+from .emailexist_test import EmailExistenceTestCase
+from .userddetail_test import UserDetailAPITestCase
