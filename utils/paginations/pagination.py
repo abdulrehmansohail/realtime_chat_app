@@ -6,10 +6,3 @@ class OurLimitOffsetPagination(LimitOffsetPagination):
     limit_query_param = 'limit'
     offset_query_param = 'offset'
     max_limit = 100
-
-    
-class NotificationOurLimitOffsetPagination(LimitOffsetPagination):
-    default_limit = 20
-    limit_query_param = 'limit'
-    offset_query_param = 'offset'
-    max_limit = 30

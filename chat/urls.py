@@ -4,7 +4,6 @@ from .api import (
     CreateRoomView,
     ListRoomsView,
     RoomPreviousChatView,
-    # GroupActivityPreviousChatView,
 )
 
 from .views import GroupRoomViewSet, AddAndRemoveGroupMemberAPIView

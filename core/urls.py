@@ -6,7 +6,6 @@ from core.views import (
     ForgetPasswordView,
     ChangePasswordView,
     ResetPasswordAPIView,
-    # AccountStatusAPIView,
     AccountActivationAPIView,
 )
 from rest_framework_jwt.views import verify_jwt_token

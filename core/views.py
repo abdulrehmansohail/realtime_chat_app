@@ -235,24 +235,3 @@ class AccountActivationAPIView(APIView):
         except Exception as e:
             print(e)
             return Response({"message": "User Not Found", "status": "500"}, status.HTTP_500_INTERNAL_SERVER_ERROR)
-
-
-# class AccountStatusAPIView(APIView):
-#
-#     """
-#         Here you can check if email already exists or not
-#     """
-#     permission_classes = (AllowAny,)
-#
-#     def post(self, request):
-#         try:
-#             """
-#             Parameters:
-#                 email
-#             """
-#             user = get_object_or_404(User, email=request.data['email'])
-#             if user.is_active:
-#                 return Response({"message": True, "status": "200", "user_type": user.user_type}, status=status.HTTP_200_OK)
-#             return Response({'message': False, "status": "200", "user_type": user.user_type}, status=status.HTTP_200_OK)
-#         except Exception as e:
-#             return Response({"message": str(e), "status": "500"}, status.HTTP_500_INTERNAL_SERVER_ERROR)

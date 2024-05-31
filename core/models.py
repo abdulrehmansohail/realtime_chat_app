@@ -1,6 +1,6 @@
 from django.db import models
 from coresite.mixin import AbstractTimeStampModel
-from django.contrib.auth.models import BaseUserManager, AbstractBaseUser, AbstractUser
+from django.contrib.auth.models import BaseUserManager, AbstractUser
 
 
 class UserManager(BaseUserManager):
