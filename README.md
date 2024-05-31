@@ -22,7 +22,27 @@ Chat
 - Create Room
 - Delete Room  
 
-## Installation
+## Automatic Installation
+1. Change the permissions for deployment_script.sh
+
+```chmod +x deployment_script.sh```
+
+2. Run deployment_script.sh
+
+```./deployment_script.sh```
+
+3. Create Super User
+
+```python manage.py createsuperuser```
+
+4. create a .env file, refer to .env_example for env variables
+
+5. This script will create database with following credentials, add them to your .env file
+- Database Name = test_db
+- Database User = test
+- Database Password = admin@1234
+
+## Manual Installation
 
 
 
